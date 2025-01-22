@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Whitespace</title>
+  <style>
+
+    *{
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      font-family: sans-serif;
+      background-color: #f0f0f0;
+
+    }
+
+    .container {
+      width: 100%;
+      /* height: 829px; */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: white;
+
+    }
+
+    .header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 160px;
+      /* Adjust as needed */
+      background-color: white;
+      /* border-bottom: 2px solid #e1f1ff; */
+      /* Light blue border */
+      width: 100%;
+      max-width: 1920px;
+    }
+
+    .menu {
+      display: flex;
+      align-items: center;
+    }
+
+    .menu a {
+      color: #4F9CF9;
+      text-decoration: none;
+      padding: 0 15px;
+      white-space: nowrap;
+      font-size: 14px;
+    }
+
+    .menu a:hover {
+      text-decoration: underline;
+    }
+
+    .menu .dropdown {
+      position: relative;
+    }
+
+    .menu .dropdown .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #fff;
+      padding: 10px 0;
+      border-radius: 4px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      min-width: 150px;
+      z-index: 1;
+      /* Ensure dropdown is above other content*/
+    }
+
+    .menu .dropdown:hover .dropdown-content {
+      display: block;
+
+    }
+
+    .menu .dropdown .dropdown-content a {
+      padding: 5px 15px;
+      display: block;
+      white-space: nowrap;
+    }
+
+    .menu .dropdown .dropdown-content a:hover {
+      background-color: #f0f0f0;
+      text-decoration: none;
+    }
+
+
+    .buttons {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .buttons button {
+      padding: 8px 16px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 14px;
+
+    }
+
+    .buttons button:first-child {
+      background-color: #FFE492;
+      color: #043873;
+
+    }
+
+    .buttons button:last-child {
+      background-color: #4F9CF9;
+      color: white;
+      display: flex;
+      align-items: center;
+
+    }
+
+    .buttons button:last-child svg {
+      margin-left: 5px
+    }
+
+    .content-area {
+      max-width: 1920px;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      /* padding: 60px 40px; */
+      /* adjust to match */
+      position: relative;
+
+    }
+
+    .text-area {
+      width: 45%;
+      padding-left: 30px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      z-index: 2;
+
+    }
+
+    .text-area h1 {
+      color: black;
+      font-size: 72px;
+      line-height: 1.2;
+      font-weight: bold;
+      margin: 0;
+
+    }
+
+    .text-area p {
+      color: #777;
+      font-size: 18px;
+      line-height: 1.6;
+      margin-top: 15px;
+
+    }
+
+    .text-area button {
+      margin-top: 30px;
+      padding: 8px 16px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 14px;
+      background-color: #4F9CF9;
+      color: white;
+      display: flex;
+      align-items: center;
+
+
+    }
+
+    .text-area button svg {
+      margin-left: 5px
+    }
+
+    .hero-section{
+      height:100vh;
+      padding: 210px 160px;
+    }
+
+    .hero-section h1{
+      color: #4F9CF9;
+    }
+
+    .project-management{
+      padding-left: 210px;
+      padding-right: 210px;
+    }
+
+    .image-area {
+      width: 50%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      background-color: #C4DEFD;
+      height: 540px;
+      width: 650px;
+      border-radius: 5px;
+      z-index: 2;
+
+    }
+
+    .dot-container {
+      width: 50%;
+      height: 100%;
+      position: relative;
+      padding-bottom: 20px;
+    
+    }
+
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="logo">
+        <img src="assets\svgs\logo.svg" alt="Whitespace Logo" style="height: 30px;">
+      </div>
+      <nav class="menu">
+        <a href="#">Products</a>
+        <div class="dropdown">
+          <a href="#">Solutions</a>
+          <div class="dropdown-content">
+            <a href="#">Solution 1</a>
+            <a href="#">Solution 2</a>
+            <a href="#">Solution 3</a>
+          </div>
+        </div>
+        <a href="#">Resources</a>
+        <div class="dropdown">
+          <a href="#">Pricing</a>
+          <div class="dropdown-content">
+            <a href="#">Pricing 1</a>
+            <a href="#">Pricing 2</a>
+          </div>
+        </div>
+      </nav>
+      <div class="buttons">
+        <button>Login</button>
+        <button>Try Whitespace free <svg width="10" height="10" viewBox="0 0 10 10" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path d="M1.25 5H8.75M8.75 5L5.83333 2.08333M8.75 5L5.83333 7.91667" stroke="white" stroke-linecap="round"
+              stroke-linejoin="round" />
+          </svg></button>
+      </div>
+    </header>
+
+
+    <div class="hero-section content-area">
+      <img src="assets\svgs\yellow-strips.svg" alt=""
+        style="width: 100%; position: absolute; overflow: hidden; left: -10px;">
+
+      <div class="text-area">
+        <h1>Get More Done with whitespace</h1>
+        <p>Project management software that enables your teams to collaborate, plan, analyze and manage everyday tasks
+        </p>
+        <button>Try Whitespace free <svg width="10" height="10" viewBox="0 0 10 10" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path d="M1.25 5H8.75M8.75 5L5.83333 2.08333M8.75 5L5.83333 7.91667" stroke="white" stroke-linecap="round"
+              stroke-linejoin="round" />
+          </svg></button>
+      </div>
+      <div class="image-area">
+        <div class="blue-rectangle"></div>
+      </div>
+    </div>
+
+    <div class="project-management">
+      <div class="content-area" style="padding-top: 200px;">
+        <div class="text-area">
+          <img src="assets\svgs\web.svg" alt=""
+          style="position: absolute; overflow: hidden; left: -210px; top: 10px;">
+          <h1>Project Management</h1>
+          <p>Images, videos, PDFs and audio files are supported. Create math expressions and diagrams directly from the
+            app. Take photos with the mobile app and save them to a note.</p>
+          <button>Get Started <svg width="10" height="10" viewBox="0 0 10 10" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M1.25 5H8.75M8.75 5L5.83333 2.08333M8.75 5L5.83333 7.91667" stroke="white" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg></button>
+        </div>
+        <div class="image-area">
+          <div class="blue-rectangle"></div>
+
+        </div>
+      </div>
+      <div class="content-area">
+        <div class="dot-container">
+          <img src="/assets/svgs/colourful-circles.svg" width="100%" alt="">
+        </div>
+        <div class="text-area" style="width: 40%; padding-left: 0;">
+          <h1>Work together</h1>
+          <p>With whitespace, share your notes with your colleagues and collaborate on them.
+            You can also publish a note to the Internet and share the URL with others.</p>
+          <button style="margin-left: auto;">Try it now <svg width="10" height="10" viewBox="0 0 10 10" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M1.25 5H8.75M8.75 5L5.83333 2.08333M8.75 5L5.83333 7.91667" stroke="white" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg></button>
+
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
