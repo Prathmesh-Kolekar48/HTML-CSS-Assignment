@@ -6,10 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Whitespace</title>
   <style>
-
-    *{
+    * {
       box-sizing: border-box;
     }
+
     body {
       margin: 0;
       font-family: sans-serif;
@@ -129,7 +129,7 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
-      /* padding: 60px 40px; */
+      padding: 210px 160px;
       /* adjust to match */
       position: relative;
 
@@ -144,6 +144,7 @@
       z-index: 2;
 
     }
+
 
     .text-area h1 {
       color: black;
@@ -181,18 +182,35 @@
       margin-left: 5px
     }
 
-    .hero-section{
-      height:100vh;
+    .hero-section {
+      height: 100vh;
       padding: 210px 160px;
     }
 
-    .hero-section h1{
+    .center-text p {
+      color: #777;
+      font-size: 18px;
+      line-height: 1.6;
+      margin-top: 15px;
+      text-align: center;
+    }
+
+    .center-text h1 {
+      color: black;
+      font-size: 72px;
+      line-height: 1.2;
+      font-weight: bold;
+      margin: 0;
+      text-align: center;
+    }
+
+    .hero-section h1 {
       color: #4F9CF9;
     }
 
-    .project-management{
-      padding-left: 210px;
-      padding-right: 210px;
+    .project-management {
+      /* padding-left: 160px;
+      padding-right: 160px; */
     }
 
     .image-area {
@@ -214,7 +232,138 @@
       height: 100%;
       position: relative;
       padding-bottom: 20px;
-    
+
+    }
+
+
+
+    .pricing-table {
+      display: flex;
+      gap: 20px;
+    }
+
+    .plan {
+      background-color: white;
+      border: 1px solid #e0e0e0;
+      border-radius: 8px;
+      padding: 2rem;
+      width: 30%;
+      max-width: 472px;
+      min-width: 300px;
+      height: 90%;
+      /* text-align: center; */
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      max-height: 650px;
+    }
+
+    .plan h2 {
+      font-size: 24px;
+      margin-bottom: 10px;
+      color: #212529;
+      /* line-height: 36px; */
+      font-weight: 600;
+    }
+
+    .plan h3 {
+      font-weight: 700;
+      font-size: 36px;
+      margin-bottom: 10px;
+      color: #043873;
+    }
+
+    .plan p {
+      font-size: 18px;
+      margin-bottom: 20px;
+      color: #212529;
+    }
+
+    .plan ul {
+      list-style: none;
+      padding: 0;
+      margin: 0 0 20px 0;
+      text-align: left;
+    }
+
+    .plan ul li {
+      font-size: 14px;
+      margin-bottom: 10px;
+      color: #333;
+      /* line-height: 10px; */
+      padding: 0.5rem;
+    }
+
+    .plan button {
+      background-color: #0078d4;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      padding: 10px 20px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    .free button , .organization button{
+      background-color: transparent;
+      border: 1px solid #FFE492;
+      color: black;
+    }
+
+    .plan button:hover {
+      background-color: #005a9e;
+    }
+
+    .personal {
+      /* border: 1px solid #0078d4; */
+      box-shadow: 0px 4px 50px 0px rgba(0, 0, 0, 0.08);
+      height: 70vh;
+    }
+
+    .organization {
+      border: 1px solid #FFE492;
+    }
+
+    .free{
+      border: 1px solid #FFE492;
+    }
+
+    .your-work {
+      padding: 160px;
+      background-color: #002E63;
+      color: white;
+      text-align: center;
+    }
+
+    .your-work h1 {
+      color: white;
+      margin: auto;
+      /* margin-bottom: 20px; */
+    }
+
+    .your-work p {
+      /* font-size: 18px; */
+      margin: 2rem;
+      margin-bottom: 4em;
+      color: white;
+    }
+
+    .your-work button {
+      margin: auto;
+    }
+
+    .your-data {
+      background-color: white;
+    }
+
+    .our-sponsors {
+      background-color: white;
+      flex-direction: column;
+    }
+
+    .sponsors {
+      display: flex;
+      margin-top: 10rem;
+      justify-content: space-between;
+      width: 100%;
     }
 
   </style>
@@ -276,10 +425,9 @@
     </div>
 
     <div class="project-management">
-      <div class="content-area" style="padding-top: 200px;">
+      <div class="content-area" style="padding-bottom: 0px;">
         <div class="text-area">
-          <img src="assets\svgs\web.svg" alt=""
-          style="position: absolute; overflow: hidden; left: -210px; top: 10px;">
+          <img src="assets\svgs\web.svg" alt="" style="position: absolute; overflow: hidden; left: -10px; top: 10px;">
           <h1>Project Management</h1>
           <p>Images, videos, PDFs and audio files are supported. Create math expressions and diagrams directly from the
             app. Take photos with the mobile app and save them to a note.</p>
@@ -313,6 +461,125 @@
 
       </div>
     </div>
+
+    <div class="customize content-area" style="padding-top:0 ;">
+      <!-- <img src="assets\svgs\yellow-strips.svg" alt=""
+        style="width: 100%; position: absolute; overflow: hidden; left: -10px;"> -->
+
+      <div class="text-area" style="width: 40%; padding-left: 0;">
+        <h1>Customise it to your needs</h1>
+        <p>Customise the app with plugins, custom themes and multiple text editors (Rich Text or Markdown). Or create
+          your own scripts and plugins using the Extension API.
+        </p>
+        <button>Lets go <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1.25 5H8.75M8.75 5L5.83333 2.08333M8.75 5L5.83333 7.91667" stroke="white" stroke-linecap="round"
+              stroke-linejoin="round" />
+          </svg></button>
+      </div>
+      <div class="image-area">
+        <div class="blue-rectangle"></div>
+      </div>
+    </div>
+    <div class="price">
+      <div class="center-text">
+        <h1>Choose Your Plan</h1>
+        <p>Whether you want to get organized, keep your personal life on track, or boost workplace productivity,
+          Evernote has the right plan for you.</p>
+      </div>
+
+      <div class="pricing-table content-area" style="padding-top:10rem ;">
+        <div class="plan free">
+          <h2>Free</h2>
+          <h3>$0</h3>
+          <p>Capture ideas and find them quickly</p>
+          <ul>
+            <li><i>✔️</i><span> Sync unlimited devices</span></li>
+            <li><i>✔️</i><span> 10 GB monthly uploads</span></li>
+            <li><i>✔️</i><span> 200 MB max. note size</span></li>
+            <li><i>✔️</i><span> Customize Home dashboard and access extra widgets</span></li>
+            <li>✔️<span> Connect primary Google Calendar account</span></li>
+            <li>✔️<span> Add due dates, reminders, and notifications to your tasks</span></li>
+          </ul>
+          <button>Get Started</button>
+        </div>
+
+        <div class="plan personal">
+          <h2>Personal</h2>
+          <h3>$11.99</h3>
+          <p>Keep home and family on track</p>
+          <ul>
+            <li>✔️ Sync unlimited devices</li>
+            <li>✔️ 10 GB monthly uploads</li>
+            <li>✔️ 200 MB max. note size</li>
+            <li>✔️ Customize Home dashboard and access extra widgets</li>
+            <li>✔️ Connect primary Google Calendar account</li>
+            <li>✔️ Add due dates, reminders, and notifications to your tasks</li>
+          </ul>
+          <button>Get Started</button>
+        </div>
+
+        <div class="plan organization">
+          <h2>Organization</h2>
+          <h3>$49.99</h3>
+          <p>Capture ideas and find them quickly</p>
+          <ul>
+            <li>✔️ Sync unlimited devices</li>
+            <li>✔️ 10 GB monthly uploads</li>
+            <li>✔️ 200 MB max. note size</li>
+            <li>✔️ Customize Home dashboard and access extra widgets</li>
+            <li>✔️ Connect primary Google Calendar account</li>
+            <li>✔️ Add due dates, reminders, and notifications to your tasks</li>
+          </ul>
+          <button>Get Started</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="your-work content-area">
+    <div class="text-area" style="width: 100%;">
+      <h1>Your work, everywhere you are</h1>
+      <p>Access your notes from your computer, phone, or tablet by synchronizing with various services, including
+        whitespace, Dropbox, and OneDrive. The app is available on Windows, macOS, Linux, Android, and iOS. A terminal
+        app is also available!</p>
+      <button>Try Taskey <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M1.25 5H8.75M8.75 5L5.83333 2.08333M8.75 5L5.83333 7.91667" stroke="white" stroke-linecap="round"
+            stroke-linejoin="round" />
+        </svg>
+      </button>
+    </div>
+
+  </div>
+
+  <div class="your-data content-area">
+
+    <div class="text-area" width="70%">
+      <h1>100% your data</h1>
+      <p>The app is open source and your notes are saved to an open format, so you'll always have access to them. Uses
+        End-To-End Encryption (E2EE) to secure your notes and ensure no-one but yourself can access them.
+      </p>
+      <button>Read More<svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M1.25 5H8.75M8.75 5L5.83333 2.08333M8.75 5L5.83333 7.91667" stroke="white" stroke-linecap="round"
+            stroke-linejoin="round" />
+        </svg></button>
+    </div>
+    <div class="image-area" style="background-color: transparent; width: 50%;">
+      <!-- <div class="blue-rectangle"></div> -->
+      <img src="/assets/svgs/your-data.svg" alt="" width="100%">
+    </div>
+  </div>
+
+  <div class="our-sponsors content-area">
+    <div class="center-text">
+      <h1>Our sponsors</h1>
+    </div>
+    <div class="sponsors">
+      <img src="/assets/svgs/apple.svg" alt="">
+      <img src="/assets/svgs/microsoft.svg" alt="">
+      <img src="/assets/svgs/slack.svg" alt="">
+      <img src="/assets/svgs/google.svg" alt="">
+    </div>
+  </div>
+
   </div>
 
 </body>
