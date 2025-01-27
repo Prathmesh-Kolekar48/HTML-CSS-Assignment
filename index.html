@@ -7,8 +7,10 @@
   <title>whitepace</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+    rel="stylesheet">
 
   <style>
     * {
@@ -151,23 +153,26 @@
     }
 
     .underline {
-  position: relative;
-  display: inline-block;
-  z-index: 1;
-}
+      position: relative;
+      display: inline-block;
+      z-index: 1;
+    }
 
-.underline::after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 65px; /* Adjust height to match your image */
-  background-image: url("assets/svgs/yellow-underline.svg");
-  background-repeat: no-repeat;
-  background-size: cover; /* Ensures the image scales properly */
-  bottom: -3px; /* Adjust to position the underline properly */
-  left: 0;
-  z-index: -1;
-}
+    .underline::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 65px;
+      /* Adjust height to match your image */
+      background-image: url("assets/svgs/yellow-underline.svg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      /* Ensures the image scales properly */
+      bottom: -3px;
+      /* Adjust to position the underline properly */
+      left: 0;
+      z-index: -1;
+    }
 
     .text-area {
       width: 670px;
@@ -180,19 +185,19 @@
 
     }
 
-    .hero-section .text-area{
+    .hero-section .text-area {
       width: 670px;
       height: 361px;
       justify-content: space-evenly;
       padding: 0;
     }
 
-    .project-management .text-area{
+    .project-management .text-area {
       height: 411px;
       width: 672px;
     }
 
-    .work-together .text-area{
+    .work-together .text-area {
       height: 294px;
       width: 672px;
     }
@@ -209,7 +214,7 @@
     }
 
     .text-area p {
-      color: #777;
+      color: black;
       font-size: 18px;
       line-height: 1.6;
       margin-top: 15px;
@@ -238,6 +243,8 @@
     .text-area button svg {
       margin-left: 5px
     }
+
+
 
     .hero-section {
       height: 829px;
@@ -277,11 +284,11 @@
       padding-right: 160px; */
     }
 
-    .work-together{
+    .work-together {
       /* gap:85px; */
     }
 
-    .project-management .image-area{
+    .project-management .image-area {
       height: 547px;
       width: 748px;
     }
@@ -299,22 +306,50 @@
       z-index: 2;
     }
 
-    .hero-section .image-area{
+    .hero-section .image-area {
       height: 549px;
       width: 824px;
     }
 
     .dot-container {
       height: 661px;
-      width:710px;
+      width: 710px;
       position: relative;
       padding-bottom: 20px;
 
     }
 
+    .customize {}
 
+    .customize .image-area {
+      height: 479px;
+      width: 686px;
+    }
+
+    .customize .text-area {
+      width: 697px;
+      height: 381px;
+
+    }
+
+    .customize .text-area button {
+      /* font-family: 'montserrat'; */
+      font-family: 'Inter';
+      font-size: 18px;
+      font-weight: 400;
+    }
+
+    .customize .underline::after {
+      height: 25px;
+      background-image: url("assets/svgs/yellow-underline-small.svg");
+    }
+
+    .price {
+      padding-top: 140px;
+    }
 
     .pricing-table {
+      padding-top: 24px;
       display: flex;
       gap: 20px;
     }
@@ -405,11 +440,18 @@
     }
 
     .your-work {
-      padding: 220px;
-      background-color: #002E63;
+      /* padding: 220px; */
+      background-color: rgba(4, 56, 115, 1);
       color: white;
       text-align: center;
     }
+
+    .your-work .text-area {
+      height: 294px;
+      width: 1064px;
+      margin: auto;
+    }
+
 
     .your-work h1 {
       color: white;
@@ -419,8 +461,9 @@
 
     .your-work p {
       /* font-size: 18px; */
-      margin: 2rem;
-      margin-bottom: 4em;
+      margin: 1.5rem;
+      font-weight: 300;
+      margin-bottom: 2em;
       color: white;
     }
 
@@ -428,8 +471,37 @@
       margin: auto;
     }
 
+    .your-work .underline::after {
+      background-image: url("assets/svgs/blue-underline.svg");
+      width: 100%;
+      background-size: contain;
+      height: 20px;
+      left: -15px;
+      bottom: -3px;
+    }
+
     .your-data {
       background-color: white;
+
+    }
+
+    .your-data .content-area {
+      height: 381px;
+      width: 1481px;
+    }
+
+    .your-data .text-area {
+      height: 324px;
+      width: 800px;
+    }
+
+    .your-data .image-area {
+      height: 381px;
+      width: 681px;
+    }
+
+    .your-data .underline::after {
+      height: 45px;
     }
 
     .our-sponsors {
@@ -437,16 +509,43 @@
       flex-direction: column;
     }
 
+    .our-sponsors .content-area {
+      height: 258px;
+      width: 1482px;
+    }
+
+    .our-sponsors .underline::after {
+      height: 40px;
+      bottom: -20px;
+      background-image: url("assets/svgs/yellow-underline-small.svg");
+      background-size: contain;
+    }
+
     .sponsors {
       display: flex;
-      margin-top: 10rem;
+      margin-top: 100px;
       justify-content: space-between;
       width: 100%;
     }
 
     .apps {
-      background-color: #002E63;
+      background-color: rgba(4, 56, 115, 1);
 
+    }
+
+    .apps .content-area {
+      width: 1480px;
+      height: 471px;
+    }
+
+    .apps .text-area {
+      width: 798px;
+      height: 468px;
+    }
+
+    .apps .dot-container {
+      height: 471px;
+      width: 582px;
     }
 
     .apps h1,
@@ -459,47 +558,84 @@
       padding: 140px 220px;
     }
 
+    .testimonials .content-area {
+      height: 627px;
+      width: 1480px;
+    }
+
+    .testimonials .center-text {
+      margin-bottom: 60px;
+    }
+
     .testimonials-container {
       display: flex;
-      justify-content: space-evenly;
+      justify-content: space-between;
       /* gap: 20px; */
       margin-bottom: 20px;
-      padding: 2rem;
+      /* padding: 2rem; */
       height: 480px;
+      width: 1480px;
 
     }
 
     .testimonial-card {
       background: #4F9CF9;
-      padding: 20px;
+      padding: 60px 40px;
       border-radius: 10px;
-      width: 30%;
-      max-width: 472px;
-      min-width: 300px;
+      height: 480px;
+      width: 472px;
+      /* min-width: 300px; */
       /* height: 480px; */
       /* height: auto; */
       box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
       text-align: left;
     }
 
+    .testimonial-card-active {
+      box-shadow: 10px 10px 50px 0px rgba(0, 0, 0, 0.08);
+
+    }
+
     .user-image {
-      width: 50px;
-      height: 50px;
+      width: 70px;
+      height: 70px;
       border-radius: 50%;
       margin-bottom: 10px;
     }
 
     .testimonial-card p {
-      font-size: 14px;
-      line-height: 1.6;
+      font-family: Inter;
       color: white;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 30px;
+      letter-spacing: -0.02em;
+      text-align: left;
+      text-underline-position: from-font;
+      text-decoration-skip-ink: none;
+
     }
 
     .testimonial-card h3 {
-      font-size: 16px;
-      font-weight: bold;
-      margin: 10px 0 5px;
+      font-family: Inter;
       color: white;
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 21.78px;
+      letter-spacing: -0.02em;
+      text-align: left;
+      text-underline-position: from-font;
+      text-decoration-skip-ink: none;
+
+    }
+
+    .testimonials .underline::after {
+      height: 40px;
+      /* left: -15px; */
+      bottom: -25px;
+      background-size: contain;
+      background-image: url('/assets/svgs/yellow-underline-small.svg');
+
     }
 
     .stars {
@@ -514,154 +650,260 @@
     }
 
     .testimonial-controls button {
-      background-color: rgba(4, 56, 115, 1);
-      color: white;
+      box-shadow: 0px 4px 50px -15px rgba(0, 0, 0, 0.15);
+      /* border: 1.5px solid rgba(79, 156, 249, 1); */
+      background-color: rgba(230, 241, 254, 1);
+      color: #4F9CF9;
       border: none;
       border-radius: 50%;
-      width: 30px;
-      height: 30px;
-      font-size: 16px;
+      width: 75px;
+      height: 75px;
+      font-size: 40px;
       cursor: pointer;
     }
 
-.footer {
-  background-color: #003366;
-  color: #ffffff;
-  padding: 140px 220px;
-  padding-bottom: 20px;
-  font-size: 14px;
-}
+    .footer {
+      background-color: rgba(4, 56, 115, 1);
+      color: #ffffff;
+      padding: 140px 220px;
+      padding-bottom: 20px;
+      font-size: 14px;
+    }
 
-.footer-container {
-  display: flex;
-  /* grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); */
-  gap: 20px;
-  margin-bottom: 20px;
-}
+    .footer-container {
+      display: flex;
+      /* grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); */
+      gap: 100px;
+      margin-bottom: 20px;
+      width: 1480px;
+      height: 182px;
+    }
 
-.footer-section {
-  width: 18%;
-  min-width: 250px;
-}
+    .footer-section {
+      width: 205px;
+      /* min-width: 250px; */
+      /* height: 182px; */
+    }
 
-.footer-section h3 {
-  font-size: 18px;
-  margin-bottom: 10px;
-  font-family: 'Inter';
-}
+    .footer-section h3 {
+      font-size: 18px;
+      margin-bottom: 10px;
+      font-family: 'Inter';
+    }
 
-.footer-section ul {
-  list-style: none;
-  padding: 0;
-}
+    .footer-section ul {
+      list-style: none;
+      padding: 0;
+    }
 
-.footer-section ul li {
-  margin-bottom: 8px;
-}
+    .footer-section ul li,
+    .footer-section p {
+      margin-bottom: 8px;
+      font-family: Inter;
+      font-size: 16px;
+      font-weight: 300;
+      line-height: 25px;
+      letter-spacing: -0.02em;
+      text-align: left;
+      text-underline-position: from-font;
+      text-decoration-skip-ink: none;
 
-.footer-section ul li a {
-  color: #ffffff;
-  text-decoration: none;
-}
+    }
 
-.footer-section ul li a:hover {
-  text-decoration: underline;
-}
+    .footer-section ul li a {
+      color: #ffffff;
+      text-decoration: none;
+    }
 
-.brand-section {
-  /* grid-column: span 2; */
-  width: 20%;
-  min-width: 200px;
-}
+    .footer-section ul li a:hover {
+      text-decoration: underline;
+    }
 
-.brand {
-  font-size: 24px;
-  font-weight: bold;
-}
+    .brand-section {
+      /* grid-column: span 2; */
+      width: 20%;
+      min-width: 200px;
+    }
 
-.brand-description {
-  margin-top: 10px;
+    .brand {
+      font-size: 24px;
+      font-weight: bold;
+    }
 
-font-family: Inter;
-font-size: 18px;
-font-weight: 400;
-line-height: 30px;
-letter-spacing: -0.02em;
-text-align: left;
-text-underline-position: from-font;
-text-decoration-skip-ink: none;
+    .brand-description {
+      margin-top: 10px;
+
+      font-family: Inter;
+      font-size: 18px;
+      font-weight: 300;
+      line-height: 30px;
+      letter-spacing: -0.02em;
+      text-align: left;
+      text-underline-position: from-font;
+      text-decoration-skip-ink: none;
 
 
-}
+    }
 
-.cta-button {
-  display: inline-block;
-  margin-top: 10px;
-  padding: 10px 20px;
-  background-color: #0066cc;
-  color: #ffffff;
-  text-decoration: none;
-  border-radius: 4px;
-  font-weight: bold;
-}
+    .cta-button {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 20px 40px;
+      background-color: rgba(79, 156, 249, 1);
+      color: #ffffff;
+      text-decoration: none;
+      border-radius: 4px;
+      /* font-weight: bold; */
+    }
 
-.cta-button:hover {
-  background-color: #004d99;
-}
+    .cta-button:hover {
+      background-color: #004d99;
+    }
 
-.footer-bottom {
-  border-top: 1px solid rgba(46, 78, 115, 1);
-  padding-top: 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-}
+    .footer-bottom {
+      border-top: 1px solid rgba(46, 78, 115, 1);
+      margin-top: 80px;
+      padding-top: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
 
-.footer-bottom-left {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 60%;
-}
+      font-family: Inter;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 20px;
+      letter-spacing: -0.02em;
+      text-align: left;
+      text-underline-position: from-font;
+      text-decoration-skip-ink: none;
 
-.footer-bottom-left a {
-  color: #ffffff;
-  margin-right: 15px;
-  text-decoration: none;
-}
+    }
 
-.footer-bottom-left a:hover {
-  text-decoration: underline;
-}
+    .footer-bottom-left {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 60%;
+      gap: 60px;
+    }
 
-.social-links a {
-  margin-left: 10px;
-  color: #ffffff;
-  text-decoration: none;
-  font-size: 18px;
-}
+    .footer-bottom-left a {
+      color: #ffffff;
+      margin-right: 15px;
+      text-decoration: none;
+    }
 
-.social-links a:hover {
-  color: #0066cc;
-}
+    .footer-bottom-left a:hover {
+      text-decoration: underline;
+    }
 
-@media (max-width: 768px) {
-  .footer-container {
-    grid-template-columns: 1fr;
-    text-align: center;
-  }
+    .social-links a {
+      margin-left: 10px;
+      color: #ffffff;
+      text-decoration: none;
+      font-size: 18px;
+    }
 
-  .footer-bottom {
-    flex-direction: column;
-    text-align: center;
-  }
+    .social-links a:hover {
+      color: #0066cc;
+    }
 
-  .social-links a {
-    margin: 5px;
-  }
-}
+    @media Screen and (max-width: 1440px) {
 
+      .header {
+
+        padding: 16px 32px;
+
+      }
+
+
+      .content-area {
+        max-width: 1440px;
+        padding: 100px 32px;
+
+      }
+
+
+      .text-area {
+        width: 670px;
+      }
+
+      .hero-section .text-area {
+        width: 670px;
+        height: 361px;
+      }
+
+      .project-management .text-area {
+        height: 411px;
+        width: 657px;
+      }
+
+      .project-management .image-area {
+        height: 448px;
+        width: 719px;
+      }
+
+      .work-together .text-area {
+        height: 324px;
+        width: 633px;
+      }
+
+      .work-together .dot-container,
+      .dot-container img {
+        height: 442px;
+        width: 583px;
+      }
+
+
+      .text-area button {
+        padding: 20px;
+
+      }
+
+      .testimonials {
+        padding: 100px 32px;
+      }
+
+      .testimonials-container {
+        justify-content: center;
+        gap: 20px;
+        width: auto;
+      }
+
+      .testimonial-card {
+        width: 437px;
+      }
+
+      .footer {
+        padding: 100px 32px;
+      }
+
+      .footer-container {
+        width: 1376px;
+      }
+
+      .footer-section {
+        width: 195px;
+      }
+    }
+
+
+    @media (max-width: 768px) {
+      .footer-container {
+        grid-template-columns: 1fr;
+        text-align: center;
+      }
+
+      .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .social-links a {
+        margin: 5px;
+      }
+    }
   </style>
 </head>
 
@@ -692,10 +934,10 @@ text-decoration-skip-ink: none;
         <div class="buttons">
           <button>Login</button>
           <button>Try whitepace free <svg width="10" height="10" viewBox="0 0 10 10" fill="none"
-            xmlns="http://www.w3.org/2000/svg">
-            <path d="M1.25 5H8.75M8.75 5L5.83333 2.08333M8.75 5L5.83333 7.91667" stroke="white" stroke-linecap="round"
-            stroke-linejoin="round" />
-          </svg></button>
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M1.25 5H8.75M8.75 5L5.83333 2.08333M8.75 5L5.83333 7.91667" stroke="white" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg></button>
         </div>
       </nav>
     </header>
@@ -747,7 +989,7 @@ text-decoration-skip-ink: none;
           <h1>Work together</h1>
           <p>With whitepace, share your notes with your colleagues and collaborate on them.
             You can also publish a note to the Internet and share the URL with others.</p>
-          <button >Try it now <svg width="10" height="10" viewBox="0 0 10 10" fill="none"
+          <button>Try it now <svg width="10" height="10" viewBox="0 0 10 10" fill="none"
               xmlns="http://www.w3.org/2000/svg">
               <path d="M1.25 5H8.75M8.75 5L5.83333 2.08333M8.75 5L5.83333 7.91667" stroke="white" stroke-linecap="round"
                 stroke-linejoin="round" />
@@ -759,16 +1001,16 @@ text-decoration-skip-ink: none;
       </div>
     </div>
 
-    <div class="customize content-area" style="padding-top:0 ;">
+    <div class="customize content-area">
       <!-- <img src="assets\svgs\yellow-strips.svg" alt=""
         style="width: 100%; position: absolute; overflow: hidden; left: -10px;"> -->
 
-      <div class="text-area" style="width: 40%; padding-left: 0;">
-        <h1>Customise it to your needs</h1>
+      <div class="text-area">
+        <h1>Customise it to <br>your <span class="underline">needs</span></h1>
         <p>Customise the app with plugins, custom themes and multiple text editors (Rich Text or Markdown). Or create
           your own scripts and plugins using the Extension API.
         </p>
-        <button>Lets go <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <button>Let's go <svg width="14" height="14" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M1.25 5H8.75M8.75 5L5.83333 2.08333M8.75 5L5.83333 7.91667" stroke="white" stroke-linecap="round"
               stroke-linejoin="round" />
           </svg></button>
@@ -779,12 +1021,12 @@ text-decoration-skip-ink: none;
     </div>
     <div class="price">
       <div class="center-text">
-        <h1>Choose Your Plan</h1>
+        <h1>Choose <span class="underline">Your Plan</span></h1>
         <p>Whether you want to get organized, keep your personal life on track, or boost workplace productivity,
           Evernote has the right plan for you.</p>
       </div>
 
-      <div class="pricing-table content-area" style="padding-top:10rem ;">
+      <div class="pricing-table content-area">
         <div class="plan free">
           <h2>Free</h2>
           <h3>$0</h3>
@@ -833,8 +1075,10 @@ text-decoration-skip-ink: none;
     </div>
   </div>
   <div class="your-work content-area">
-    <div class="text-area" style="width: 100%;">
-      <h1>Your work, everywhere you are</h1>
+    <img src="assets\svgs\web.svg" alt="" style="position: absolute; overflow: hidden; left: -10px; top: 10px;">
+
+    <div class="text-area">
+      <h1>Your work, everywhere <span class="underline">you are</span></h1>
       <p>Access your notes from your computer, phone, or tablet by synchronizing with various services, including
         whitepace, Dropbox, and OneDrive. The app is available on Windows, macOS, Linux, Android, and iOS. A terminal
         app is also available!</p>
@@ -849,8 +1093,9 @@ text-decoration-skip-ink: none;
 
   <div class="your-data content-area">
 
-    <div class="text-area" width="70%">
-      <h1>100% your data</h1>
+    <div class="text-area">
+      <h1>100% <span class="underline"> your data </spans>
+      </h1>
       <p>The app is open source and your notes are saved to an open format, so you'll always have access to them. Uses
         End-To-End Encryption (E2EE) to secure your notes and ensure no-one but yourself can access them.
       </p>
@@ -859,15 +1104,15 @@ text-decoration-skip-ink: none;
             stroke-linejoin="round" />
         </svg></button>
     </div>
-    <div class="image-area" style="background-color: transparent; width: 50%;">
+    <div class="image-area" style="background-color: transparent;">
       <!-- <div class="blue-rectangle"></div> -->
-      <img src="/assets/svgs/your-data.svg" alt="" width="100%">
+      <img src="/assets/svgs/your-data.svg" alt="">
     </div>
   </div>
 
   <div class="our-sponsors content-area">
     <div class="center-text">
-      <h1>Our sponsors</h1>
+      <h1>Our <span class="underline">sponsors </span></h1>
     </div>
     <div class="sponsors">
       <img src="/assets/svgs/apple.svg" alt="">
@@ -884,7 +1129,7 @@ text-decoration-skip-ink: none;
     <div class="dot-container">
       <img src="/assets/svgs/apps.svg" width="100%" alt="">
     </div>
-    <div class="text-area" style="width: 40%; padding-left: 0;">
+    <div class="text-area">
       <h1>Work with Your Favorite Apps Using whitepace</h1>
       <p>Whitepace teams up with your favorite software. Integrate with over 1000+ apps with Zapier to have all the
         tools you need for your project success.</p>
@@ -898,15 +1143,15 @@ text-decoration-skip-ink: none;
 
   <div class="testimonials">
     <div class="center-text">
-      <h1>See what our trusted users Say</h1>
+      <h1>See what our <span class="underline "> trusted </span> users Say</h1>
     </div>
     <div class="testimonials-container">
-      <div class="testimonial-card" style="background-color: white; color: black;">
+      <div class="testimonial-card testimonial-card-active" style="background-color: white; color: black;">
         <img src="/assets/svgs/user1.svg" alt="User Image" class="user-image">
         <p style="color: black;">“If you haven’t tried whitepace yet, you need to give it a shot for your next event.
           It’s so easy and
           intuitive to get a new event setup and if you need any help their customer service is seriously amazing.”</p>
-        <h3>Jessie Owner</h3>
+        <h3 style="color: black;">Jessie Owner</h3>
         <p>Founder, XYZ Company</p>
         <div class="stars">★★★★★</div>
       </div>
@@ -942,7 +1187,7 @@ text-decoration-skip-ink: none;
           whitepace was created for the new ways we live and work. We make a better workspace around the world.
         </p>
       </div>
-      <div class="footer-section" style="margin-left:2rem;">
+      <div class="footer-section">
         <h3>Product</h3>
         <ul>
           <li><a href="#">Overview</a></li>
@@ -967,14 +1212,14 @@ text-decoration-skip-ink: none;
         </ul>
       </div>
       <div class="footer-section">
-        <h3>Try It Today</h3>
+        <h3 style="font-size: 28px;">Try It Today</h3>
         <p>Get started for free. Add your whole team as your needs grow.</p>
         <a href="#" class="cta-button">Start Today →</a>
       </div>
     </div>
     <div class="footer-bottom">
       <div class="footer-bottom-left">
-        <a href="#">English</a>  <a href="#">Terms & Privacy</a>  <a href="#">Security</a>  <a href="#">Status</a>
+        <a href="#">English</a> <a href="#">Terms & Privacy</a> <a href="#">Security</a> <a href="#">Status</a>
         <p>© 2021 Whitepace LLC.</p>
       </div>
       <div class="footer-bottom-right">
